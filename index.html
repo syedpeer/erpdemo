@@ -1,7 +1,723 @@
-<html>
-    <head>
-    </head>
-    <body>
-        <h1>This is test page.</h1>
-    </body>
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<title>ITSC Presentation</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style type="text/css">
+
+			#myTextDiv1 {
+				position: absolute;
+				background-color: red;
+				color:white;
+				left: -1200px;
+    		top: 0px;
+
+			}
+
+			div.mylistitem {
+				position: absolute;
+				width: 600px;
+				height: 50px;
+				background-color: red;
+				left: -1200px;
+				top: 200px;
+			}
+
+			div.mylistitem::before {
+				/* content: "&amp;" ; */
+			}
+
+			div.myrect {
+				position: absolute;
+				font-family: Georgia, verdana;
+				font-size: 16px;
+				width: 300px;
+				height: 100px;
+				overflow: hidden;
+			}
+
+			#divRectangle {
+			  position: absolute;
+			}
+
+			#divRectangle {
+			  background-color: indianred;
+				font-family: Georgia, verdana;
+				font-size: 16px;
+			  width: 300px;
+			  height: 100px;
+			  top: 50px;
+			  left: -1200px;
+				overflow: hidden;
+				vertical-align: top;
+			}
+
+			#divRectangle2 {
+			  background-color: brown;
+			  top: 50px;
+			  left: -1200px;
+			}
+
+		#first-box {
+				background-color: indianred;
+				color: yellow;
+				left: -1200px;
+    		top: 200px;
+			}
+
+		#second-box {
+				background-color: blue;
+				color: white;
+				left: -1100px;
+    		top: 200px;
+			}
+
+		#third-box {
+				background-color: maroon;
+				color: yellow;
+				left: -1100px;
+    		top: -1100px;
+			}
+
+		#left_side {
+			width: 50%;
+			/* border: 1px solid yellow; */
+		}
+
+		.my_title {
+			background-color: red;
+			color: white;
+		}
+
+		.colfg_red			{ color: red; }
+		.colfg_blue 		{ color: blue; }
+		.colfg_green		{ color: green; }
+		.colfg_magenta 	{ color: magenta; }
+		
+			
+		.left_sidebar {
+			width: 50%;
+			border: 1px solid white;
+			text-align: left; 
+		}
+			
+		.left_sidebar_wide {
+			width: 90%;
+			border: 1px solid white;
+			text-align: left; 
+		}
+			
+
+		.left-side-bar-narrow {
+			width: 50%;
+			font-size: 14px;
+		}
+
+		.selected {
+				background: white;
+				color: blue;
+			}
+
+		.highlight {
+				background: yellow;
+				color: darkgreen;
+			}
+			
+		.highlight-gray {
+				background: #1f1f1f;
+				color: white;
+			}			
+
+			.box {
+				position: absolute;
+				top: 100px;
+				right: 200px;
+				width: 200px;
+				height: 400px;
+				background-color: aqua;
+				border: 1px solid white;
+			}
+		.bbc_head 	{ background-color: black; color: yellow; padding: 0 10px; border: 5px solid red;}
+		.bbc_headx 	{ background-color: #7E827A ; color: yellow; padding: 0 10px; border: 5px solid red;}
+		
+		.bbc_text 	{ background-color: yellow; color:black; padding: 0 10px;}
+		.bbc_text::before { content: " ";}
+		.bbc_text::after { content: "";}
+
+		</style>
+
+		<link rel="stylesheet" href="css/mystyle.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!--
+				<section data-background-transition="fade-in"
+						data-background="images/safety_alert_01.jpg" 
+						data-background-size="1024px">
+					<h2>&nbsp;</h2>
+				</section>
+
+				<section data-background-transition="fade-in"
+						data-background="images/safety_alert_02.jpg" 
+						data-background-size="1024px">
+					<h2>&nbsp;</h2>
+				</section>
+				-->
+
+				<section  id="home" data-state="intro" data-background="images/bg/qafco-pptx-template.jpg">
+					<br/><br/><br/>
+					<h1>ITSC Meeting 2017-01</h1>
+
+					<span style="background-color:#7E827A;padding: 0 10px;">2017 - Year in Review <br/><br/> Road Map 2018+</span>
+					<!--
+					<h3><span style-'color:red;'>2017 year in review <br/>&amp;<br/> Road Map 2018+</span></h3>
+					-->
+					<p>
+						<small>Created by <a href="#">IT Department</a></small>
+					</p>
+					
+				</section>
+				
+				<section data-state="recent-proj-updates" data-background="images/bg/apple-desk-laptop-working_dark.png">
+
+					<h2>AGENDA</h2>
+					
+					<div class="left_sidebar_wide">
+						<ul>
+							<li class="fragment fade-in highlight">Projects 2017</li>
+								<ul>
+									<li class="fragment fade-in">New Custom Application/Enhancements</li>
+									<li class="fragment fade-in">ERP JDE/SAP Assessment Study</li>
+									<li class="fragment fade-in">Software Development Life Cycle</li>
+								</ul>
+						</ul>
+						<ul>
+							<li class="fragment highlight colfg_blue">Cyber Security</li>
+								<ul>
+									<li class="fragment fade-in">ISO 27001 Initiative</li>
+									<li class="fragment fade-in">STAR-5 National Cyber Security Drill</li>
+								</ul>
+						</ul>
+						<ul>
+							<li class="fragment highlight colfg_blue">Road Map 2018+</li>
+								<ul>
+									<li class="fragment slide-in">QAFCO Dashboards 2.0 / Mobile Access</li>
+									<li class="fragment fade-in">Platform General</li>
+									<li class="fragment fade-in">Infrastructure</li>
+									<li class="fragment fade-in">Business Project Prioritization</li>
+								</ul>
+						</ul>						
+					</div>
+
+					<img id="mylogo"  class="logo" src="images/portfolio6.jpg">
+					<img id="mylogo2" class="logo" src="images/portfolio7.jpg">
+					<img id="mylogo3" class="logo" src="images/portfolio8.jpg">
+
+				</section>					
+			
+			
+				<section data-state="projects-updates" data-background="images/bg/project-team-desktop-dark.png" style="text-align: left; vertical-align:top; margin-left: 20px;">
+
+					<h2>PROJECTS 2017</h2>
+					<span class="bbc_headx">New Custom</span><span class="bbc_text">Application/Enhancement</span>
+
+					<ul>
+						<li class="fragment roll-in">ERP New EPAS System</li>
+						<li class="fragment roll-in">ERP New Expense Management Module</li>
+						<li class="fragment roll-in">ERP New Travel Authorization Request</li>
+						<li class="fragment roll-in">ERP New Simplified Incident Reporting</li>
+						<li class="fragment roll-in">ERP New IDEA Suggestion System</li>
+						<li class="fragment roll-in">ERP New 12-hour Shift Rotation</li>	
+						<li class="fragment roll-in">ERP New VAT Applications Support</li>
+						<li class="fragment roll-in">ERP New Housing Occupancy Monitor</li>
+						<li class="fragment roll-in">ERP Elect. Voucher Approval w/image</li>
+						<li class="fragment roll-in">ERP CBQ Host-To-Host File Transfers</li>
+					</ul>
+					
+					<div style="width: 300px; height: 600px;">
+						<img id="slideimg_201" class="announce" src="images/announce-lotus-notes.png">
+						<img id="slideimg_202" class="announce" src="images/dashboard-sqa-team.png">	
+					</div>														
+
+				</section>
+
+				<section data-state="projects-updates" data-background="images/bg/project-team-desktop-dark.png" style="text-align: left; vertical-align:top; margin-left: 20px;">
+
+					<h2>PROJECTS 2017</h2>
+					<span class="bbc_headx">New Custom</span><span class="bbc_text">Application/Enhancement</span>
+
+					<ul>
+						<li class="fragment roll-in">ERP Clearance Form Automation</li>
+						<li class="fragment roll-in">ERP Safety Work Permit Revamp</li>
+						<li class="fragment roll-in">ERP New Shutdown Material Monitoring</li>
+						<li class="fragment roll-in">ERP New Periodic Maintenance Forecasting</li>
+						<li class="fragment roll-in">ERP New Streamline Maint. Planning Process</li>
+						<li class="fragment roll-in">New PIMS Unidirectional Data Xfer Architecture</li>
+						<li class="fragment roll-in">New Document Management System/Ctrl/HR/Cor/PMP</li>
+					</ul>
+					
+					<div style="width: 300px; height: 600px;">
+						<img id="slideimg_201" class="announce" src="images/announce-lotus-notes.png">
+						<img id="slideimg_202" class="announce" src="images/dashboard-sqa-team.png">	
+					</div>														
+
+				</section>
+
+				<section data-state='projects-updates' data-background="images/bg/project-team-desktop-dark.png" data-background-transition="Slide">
+					<h2>PROJECTS 2017</h2>
+					<span class="bbc_headx">New Custom</span><span class="bbc_text">ERP Deployment Metrics</span>
+					<p></p>
+					<table  class="fragment fade-in">
+						<thead style="background-color:#0000FF;">
+							<th>Business Area</th><th>Project</th>
+						</thead>
+						<tbody>
+							<tr class="fragment fade-in">
+								<td>Finance/AP/AR/GL</td><td>23</td>	
+							</tr>
+							<tr class="fragment fade-in">
+								<td>Contracts &amp; Procurement</td><td>11</td>	
+							</tr> 
+							<tr class="fragment fade-in">
+								<td>Warehouse</td><td>8</td>	
+							</tr>
+							<tr class="fragment fade-in">
+								<td>HR</td><td>26</td>	
+							</tr> 							
+							<tr class="fragment fade-in">	
+								<td>Maintenance</td><td>17</td>	
+							</tr> 
+							<tr class="fragment fade-in">
+								<td>Production</td><td>3</td>	
+							</tr> 
+
+							<tr class="fragment fade-in" style="background-color:red; ">
+								<td>Total</td><td>88</td>	
+							</tr>							 
+						</tbody>
+					</table>
+				</section>					
+
+				<section data-state='projects-updates' data-background="images/bg/project-team-desktop-dark.png" data-background-transition="Slide">
+					<h2>PROJECTS 2017</h2>
+					<span class="bbc_headx">New Custom</span><span class="bbc_text">ERP Platform Metrics</span>
+					<p></p>
+					<table  class="fragment fade-in">
+						<thead style="background-color:#0000FF;">
+							<th>Environment</th><th>Projects</th><th>Objects</th>
+						</thead>
+						<tbody>
+							<tr class="fragment fade-in">
+								<td>[PD] Production</td><td>137</td><td>4371</td>	
+							</tr>
+							<tr class="fragment fade-in">
+								<td>[PY] Test QA/UAT</td><td>25</td><td>1190</td>
+							</tr> 
+							<tr class="fragment fade-in">
+								<td>[DV] Development</td><td>14</td><td>203</td>
+							</tr>
+							<tr class="fragment fade-in" style="background-color:red; ">
+								<td>Total</td><td>176</td><td>5764</td>
+							</tr>							 
+						</tbody>
+					</table>
+				</section>					
+
+
+				<section data-state="projects-updates" data-background="images/bg/project-team-desktop-dark.png" style="text-align: left; vertical-align:top; margin-left: 20px;">
+
+					<h2>PROJECTS 2017</h2>
+					<span class="bbc_headx">ERP </span><span class="bbc_text">JDE vs SAP Assessment Study</span>
+
+					<ul>
+						<li class="fragment roll-in">Comparison Study : JDE vs SAP</li>
+						<li class="fragment roll-in">Tendered. Completed by KPIT</li>
+						<li class="fragment roll-in">3 Reports : Business </li>
+						<ul>
+							<li class="fragment roll-in">Business Requirements</li>
+							<li class="fragment roll-in">Technical Solutions Document</li>
+							<li class="fragment roll-in">Management Executive Report</li>
+							<ul><li class="fragment roll-in">Management Presentation</li></ul>
+						</ul>	
+						<li class="fragment roll-in">Executive Decision</li>
+					</ul>
+					
+					<div style="width: 300px; height: 600px;">
+							<img id="slideimg_201" class="announce" src="images/dashboard-sqa-team.png">
+							<img id="slideimg_202" class="announce" src="images/announce-lotus-notes.png">
+					</div>														
+
+				</section>			
+
+				<section data-state="dr-failover-updates" style="text-align: left; vertical-align:top" data-background="images/bg/project_management_solid.jpg">
+
+						<h2>PROJECTS 2017</h2>
+						<span class="bbc_headx">SDLC</span><span class="bbc_text">Software Development Life Cycle</span>
+
+						<div class="left_sidebar_wide">
+							<ul>
+								<li class="fragment">Industry Standard Methodology</li>
+								<ul>
+									<li class="fragment">Business Requirements (BRD)</li>
+									<li class="fragment fade-in">Design &amp; Development</li>
+									<li class="fragment fade-in">QA / User Acceptance Test (UAT)</li>
+									<li class="fragment fade-in">Deployment / Production Support</li>
+								</ul>
+									<li class="fragment">BRD &amp; UAT: Both Standard Control Documents</li>
+									<li class="fragment">SDLC Phases Managed via Service Desk</li>
+									<li class="fragment">IT Challenges</li>
+								<ul>
+									<li class="fragment">BRD Delays / Latency / Inaccury</li>
+									<li class="fragment">Standard vs Custom vs Native / UAT Delays</li>
+									<li class="fragment">Year End Processing / Audits [Auto Reminders]</li>
+								</ul>
+							</ul>						
+						</div>
+
+						<div style="width: 300px; height: 600px;">
+								<img id="dr-failover-updates-01" class="announce" src="images/announce-dr-training.png">
+								<img id="dr-failover-updates-02" class="announce" src="images/dashboard-rm-team.png">
+						</div>					
+
+					</section>
+				
+				<!--
+				<section data-background="images/bg/project_management_solid.jpg">
+					<h2>SDLC : Waterfall Methodology</h2>
+					<ul>
+						<li class="fragment">
+							Requirements: Gather all pertinent Requirements necessary for IT to define, configure or develop solution
+						</li>
+						<li class="fragment">
+							Analysis: Analyze program changes or configuration needed for requested solution
+						</li>
+						<li class="fragment">
+							Design: Create a technical design for Program or Configure solution
+						</li>
+						<li class="fragment">
+							Development: Configure, Code/Develop needed Application or feature
+						</li>
+						<li class="fragment">
+							Test : Complete Quality Assurance/User Acceptance (UAT)
+						</li>
+						<li class="fragment">
+							Implementation: Deploy (Move/Apply) Programs/Settings to Production Environment 
+						</li>
+					</ul>
+				</section>
+				-->
+			
+				<section data-background-transition="fade-in"
+						data-background="images/sdlc-sqa-001.png" 
+						data-background-size="1024px">
+					<h2>&nbsp;</h2>
+				</section>
+				
+				<section data-background-transition="fade-in" 
+						data-background="images/sdlc-sqa-002.png" 
+						data-background-size="1024px">
+						<h2>&nbsp;</h2>
+				</section>
+				
+				<section data-background-transition="fade-in" 
+						data-background="images/sdlc-sqa-003.png"
+						data-background-size="1024px">
+						<h2>&nbsp;</h2>
+				</section>
+				
+				<section data-background-transition="fade-in" 
+						data-background="images/sdlc-sqa-004.png"
+						data-background-size="1024px">
+						<h2>&nbsp;</h2>
+				</section>				
+
+				<section data-background-transition="fade-in" 
+						data-background="images/sdlc-sqa-005.png"
+						data-background-size="1024px">
+						<h2>&nbsp;</h2>
+				</section>							
+
+				<section data-state="projects-updates" data-background="images/home/star5-drill-day_smo.jpg" style="text-align: left; vertical-align:top; margin-left: 20px;">
+
+					<h2>CYBER SECURITY</h2>
+					<span class="bbc_headx">ISO 27001</span><span class="bbc_text"> Assessment Initiative</span>
+
+					<ul>
+						<li class="fragment roll-in">Vulerabilties &amp; Risks / Policies &amp; Procedures</li>
+						<ul>
+							<li class="fragment roll-in">Risk Treatment Plan</li>
+							<li class="fragment roll-in">ISO Charter / ISO Team Meeting</li>
+							<li class="fragment roll-in">ISO Certification Assesment (Quality)</li>
+						</ul>
+						<li class="fragment roll-in">Employee CS Awareness</li>
+						<ul>
+							<li class="fragment roll-in">Disaster Recovery (DR) Failover Drills</li>
+							<ul>
+								<li class="fragment roll-in">Simulation Failure / Held 2 times per year</li>
+								<li class="fragment roll-in">Business and IT Team Roles &amp; responsibility</li>
+								<li class="fragment roll-in">Results &amp; Lessons Learned</li>
+							</ul>
+							<li class="fragment roll-in">October : Cyber Security Month Campaign</li>
+							<li class="fragment roll-in">QAFCO Users IT Learning Library (QUILL)</li>
+						</ul>
+						
+					</ul>
+					
+					<div style="width: 300px; height: 600px;">
+							<img id="slideimg_201" class="announce" src="images/dashboard-sqa-team.png">
+							<img id="slideimg_202" class="announce" src="images/announce-lotus-notes.png">
+					</div>														
+
+				</section>						
+
+
+				<section data-state="projects-updates" data-background="images/home/star5-drill-day_smo.jpg" style="text-align: left; vertical-align:top; margin-left: 20px;">
+
+					<h2>CYBER SECURITY</h2>		
+					<span class="bbc_headx">STAR 5 </span><span class="bbc_text">National Cyber Security Drill</span>
+
+					<ul>
+						<li class="fragment roll-in">MOTC / ICT QATAR Organized</li>
+							<ul>
+							<li class="fragment roll-in">Caters : Oil Up/Down Stream/ Fin./ Med./ Edu.</li>
+							<li class="fragment roll-in">3<sup>rd</sup> Year for participation</li>
+							<li class="fragment roll-in">Separate Well defined exercises</li>
+							<ul>
+								<li class="fragment roll-in">Table Top : Crises Management</li>
+								<li class="fragment roll-in">Technical : Hosted Embeded Server</li>
+							</ul>	
+						<li class="fragment roll-in">Post Exercise Reporting</li>
+						<ul>
+								<li class="fragment roll-in">Anonymized Scorecard</li>
+								<li class="fragment roll-in">Recommendations</li>
+							</ul>						
+					</ul>
+					
+					<div style="width: 300px; height: 600px;">
+							<img id="slideimg_201" class="announce" src="images/dashboard-sqa-team.png">
+							<img id="slideimg_202" class="announce" src="images/announce-lotus-notes.png">
+					</div>														
+
+				</section>
+
+				<section data-state="cxo-dash-main" data-background="images/bg/bi-dashboard-laptop-dark.png" style="text-align: left; vertical-align:top">
+
+			  	<h2 class="colfg_green">ROAD MAP 2018</h2>
+				<span class="bbc_headx">QAFCO </span><span class="bbc_text">Dashboard 1.0</span>
+
+				<div class="left_sidebar_wide">
+						<ul>
+							<li class="fragment roll-in">Rolled Out in December 2015</li>
+							<li class="fragment roll-in">Built with native ORACLE BI Toolset</li>
+							<li class="fragment roll-in">Developed In-House</li>
+							<li class="fragment roll-in">Limited Access Only to CXO C-Suite</li>
+							<li class="fragment roll-in">High Level Oversight</li>
+								<ul>
+									<li class="fragment roll-in">40,000 Foot/Ichimoku View</li>
+									<li class="fragment roll-in">Decision takers One Stop Shop</li>
+									<li class="fragment roll-in">Review Progress/KPIs/Trends</li>
+								</ul>
+							<li class="fragment roll-in">Detail Drill Down</li>
+								<ul>
+									<li class="fragment roll-in">Peek into the details</li>
+									<li class="fragment roll-in">Filter, Sub-filter, combine filters</li>
+								</ul>
+						</ul>
+				  	</div>
+
+				  	<img id="cxo-dash-101" class="logo" src="images/db-splash-01.png">
+				  	<img id="cxo-dash-102" class="logo" src="images/db-splash-02.png">
+				  	<img id="cxo-dash-103" class="logo" src="images/db-splash-03.jpg">
+												
+				</section>
+				
+				<section data-state="cxo-dash-2nd" data-background="images/bg/bi-dashboard-laptop-dark.png" style="text-align: left; vertical-align:top">
+
+			  	<h2 class="colfg_green">ROAD MAP 2018</h2>
+				<span class="bbc_headx">QAFCO </span><span class="bbc_text">Dashboard 2.0</span>
+				  	
+				  	<div class="left_sidebar_wide">
+							<ul>
+							  <li class="fragment roll-in">Heirarchical Top Down</li>
+								<li class="fragment roll-in">Access For CXO, Managers, HOS</li>
+								<li class="fragment roll-in">Additional New Tabs</li>
+									<ul>
+										<li class="fragment roll-in">Overtime Statistics</li>
+										<li class="fragment roll-in">Cost Variance</li>
+										<li class="fragment roll-in">Lead Times</li>
+									</ul>								
+								<li class="fragment roll-in">Customizable in-House</li>
+								<li class="fragment roll-in">Detail - Top Down - Drill Down</li>
+								<li class="fragment roll-in">Provide Customizable insights</li>
+							</ul>
+							
+				  	</div>
+				  	
+				  	<img id="cxo-dash-201" class="dashboard" src="images/db_production.png">
+				  	<img id="cxo-dash-202" class="dashboard" src="images/db_maint_ammonia.png">
+				  	<img id="cxo-dash-203" class="dashboard" src="images/db_hr_nationality.png">
+				 						
+				</section>	
+
+					
+				<section data-state="mobile-access" data-background="images/iphone-in-hand-dark.png" style="text-align: left; vertical-align:top">
+					
+					<h2>ROAD MAP 2018+</h2>
+					
+					<div class="left_sidebar_wide">
+						<span class="bbc_headx">QAFCO </span><span class="bbc_text">Mobile Access</span>
+						 						
+						<p class="fragment roll-in">Oracle native mobile suite.</p>
+						<p class="fragment roll-in">Available on App-Store/Google-Play</p>
+						<p class="fragment roll-in">Apps available by functional areas</p>
+						<p class="fragment roll-in">Consistent Mobile User Experience</p>
+						<p class="fragment roll-in">Architecture Setup/Test over 1 year</p>
+						<p class="fragment roll-in">ESU Specific dependency by App</p>
+						<p class="fragment roll-in">Mobile Deployment by EOY/2017</p>
+					</div>
+
+					<img id="mobile-access-01" class="pogo" src="images/iphone-black.png">
+					<img id="mobile-access-02" class="pogo" src="images/iphone-white.png">
+					<img id="mobile-access-03" class="pogo" src="images/iphone-black.png">
+				</section>
+
+				<section data-state="mobile-apps-ipad" data-background="images/bw-iphone-keyboard-desk.png" style="text-align: left; vertical-align:top">
+					
+					<h2>ROAD MAP 2018+</h2>
+					<div class="left_sidebar_wide">
+					<span class="bbc_headx">QAFCO </span><span class="bbc_text">Mobile Access : iPAD</span>
+
+					<p class="fragment roll-in">Customized Landing Page</p>
+					<p class="fragment roll-in">Commonly Used Applications/Approvals</p>
+					<p class="fragment roll-in">Same Desktop Ease-of-use</p>
+					<p class="fragment roll-in">Fully Functional Equivalent</p>
+							
+					</div>
+
+					<div style="width: 300px; height: 600px;">
+							<img id="mobile-apps-ipad-01" class="ipadscreen" src="images/ipad/ez-ipad-po-app.png">
+							<img id="mobile-apps-ipad-02" class="ipadscreen" src="images/ipad/ez-ipad-emp-att.png">
+							<img id="mobile-apps-ipad-03" class="ipadscreen" src="images/ipad/ez-ipad-home.png">
+					</div>
+				</section>
+						
+				<section data-state="road-map" data-background="images/bg/software-roadmap.jpg" style="text-align: left; vertical-align:top">
+
+			  		<h2 class="colfg_green">ROAD MAP 2018+</h2>
+				  	
+				  	<div class="left_sidebar_wide">
+						<ul>
+							<li class="fragment roll-in colfg_blue highlight">Platform General</li>
+								<ul>
+									<li class="fragment roll-in colfg_blue">Outline ERP JDE Upgrade or SAP Migration Plan</li>
+									<li class="fragment roll-in colfg_blue">ISO 27001 Certfication:Confirm Timeline</li>
+								</ul>
+
+							<li class="fragment roll-in colfg_green highlight">Infrastructure</li>
+								<ul>
+									<li class="fragment roll-in colfg_green">IT Security: Implement SIEM &amp; APT Defense Tools</li>
+									<li class="fragment roll-in colfg_green">Hybrid /On Premise Cloud /SDN /DevOps</li>
+									<li class="fragment roll-in colfg_green">Explore Cloud Solutions/Outlook/Sharepoint/365</li>
+								</ul>		
+
+							<li class="fragment roll-in colfg_magenta highlight">Business Project Prioritization</li>
+								<ul>
+									<li class="fragment roll-in colfg_magenta">Project Priority Working Group/Forum</li>
+									<li class="fragment roll-in colfg_magenta">Members : IT/HOS/Business Owners</li>
+									<li class="fragment roll-in colfg_magenta">Frequency : Monthly Meeting</li>										
+									<li class="fragment roll-in colfg_magenta">Action : Queued Project Order</li>
+								</ul>
+						</ul>
+				  	</div>
+
+				</section>						
+			
+				<section  data-background="images/bg/mac_ipad_iphone_desktop_dark.png" style="text-align: left;">
+					<h1>Q &amp; A</h1>
+					<p>
+						Any questions ? 
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/velocity.min.js"></script>		
+		<script src="js/velocity.ui.min.js"></script>
+		<script src="js/animeScript.min.js"></script>
+
+
+	</body>
 </html>
+
